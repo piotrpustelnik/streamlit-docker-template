@@ -1,0 +1,11 @@
+version: '3'
+services:
+  stremlit-demo:
+    build:
+      context: .
+    image: streamlit-demo:latest
+    container_name: streamlit-demo-container
+    environment:
+      - STREAMLIT_SERVER_PORT=8501  # Define the port as an environment variable
+    ports:
+      - "8501:8501"  # Map the host port to the container port
