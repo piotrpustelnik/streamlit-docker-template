@@ -1,5 +1,5 @@
 # Use the official Alpine Linux as a base image
-FROM python:3.10
+FROM python:3.10-slim
 
 # Set the working directory in the container
 WORKDIR /streamlit-demo
