@@ -17,6 +17,9 @@ RUN python -m pip install --no-cache-dir -r requirements.txt
 # # Copy the whole project
 COPY . /streamlit-demo/
 
+# Expose the default Streamlit port
+EXPOSE 8501
+
 # # Command to run your application
 CMD ["streamlit", "run", "app/Hello.py"]
 
